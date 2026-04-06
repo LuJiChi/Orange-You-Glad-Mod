@@ -5,9 +5,7 @@ import com.lujichi.orangeyouglad.entity.ModEntities;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.PaintingVariantTagsProvider;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.PaintingVariantTags;
-import net.minecraft.world.entity.decoration.PaintingVariants;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 

@@ -5,7 +5,6 @@ import com.lujichi.orangeyouglad.OrangeYouGladMod;
 import com.lujichi.orangeyouglad.block.ModBlocks;
 import com.lujichi.orangeyouglad.item.ModItems;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;

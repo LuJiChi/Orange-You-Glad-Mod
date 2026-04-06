@@ -4,7 +4,6 @@ package com.lujichi.orangeyouglad.datagen;
 import com.lujichi.orangeyouglad.OrangeYouGladMod;
 import com.lujichi.orangeyouglad.block.ModBlocks;
 import com.lujichi.orangeyouglad.item.ModItems;
-import com.lujichi.orangeyouglad.item.custom.ModFuelItem;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;

@@ -1,6 +1,5 @@
 package com.lujichi.orangeyouglad.worldgen;
 
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;

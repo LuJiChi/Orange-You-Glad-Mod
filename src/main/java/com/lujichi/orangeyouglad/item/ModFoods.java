@@ -1,9 +1,7 @@
 package com.lujichi.orangeyouglad.item;
 
-import com.lujichi.orangeyouglad.effect.ModEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.food.FoodConstants;
 import net.minecraft.world.food.FoodProperties;
 
 public class ModFoods {

@@ -7,7 +7,6 @@ import com.lujichi.orangeyouglad.entity.client.ModModelLayers;
 import com.lujichi.orangeyouglad.entity.client.Tuanzi;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 

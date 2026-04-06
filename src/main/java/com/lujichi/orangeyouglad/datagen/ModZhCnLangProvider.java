@@ -6,8 +6,6 @@ import com.lujichi.orangeyouglad.effect.ModEffects;
 import com.lujichi.orangeyouglad.entity.ModEntities;
 import com.lujichi.orangeyouglad.item.ModItems;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.Mob;
 import net.minecraftforge.common.data.LanguageProvider;
 
 public class ModZhCnLangProvider extends LanguageProvider {

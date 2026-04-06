@@ -1,7 +1,6 @@
 package com.lujichi.orangeyouglad.entity.custom;
 
 import com.lujichi.orangeyouglad.entity.ModEntities;
-import net.minecraft.client.animation.AnimationDefinition;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;

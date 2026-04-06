@@ -3,7 +3,6 @@ package com.lujichi.orangeyouglad.loot;
 import com.lujichi.orangeyouglad.OrangeYouGladMod;
 import com.mojang.serialization.Codec;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
-import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;

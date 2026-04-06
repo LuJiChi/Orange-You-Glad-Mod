@@ -1,9 +1,6 @@
 package com.lujichi.orangeyouglad.item;
 
-import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.TieredItem;
-import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.function.Supplier;

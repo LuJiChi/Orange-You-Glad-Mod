@@ -4,7 +4,6 @@ import com.lujichi.orangeyouglad.OrangeYouGladMod;
 import com.lujichi.orangeyouglad.block.ModBlocks;
 import com.lujichi.orangeyouglad.entity.ModEntities;
 import com.lujichi.orangeyouglad.item.custom.ModFuelItem;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
