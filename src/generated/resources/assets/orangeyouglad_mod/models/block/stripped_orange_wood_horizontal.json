@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "orangeyouglad_mod:block/stripped_orange_log",
+    "side": "orangeyouglad_mod:block/stripped_orange_log"
+  }
+}

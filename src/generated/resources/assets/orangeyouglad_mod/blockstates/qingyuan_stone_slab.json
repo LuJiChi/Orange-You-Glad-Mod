@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "orangeyouglad_mod:block/qingyuan_stone_slab"
+    },
+    "type=double": {
+      "model": "orangeyouglad_mod:block/qingyuan_stone"
+    },
+    "type=top": {
+      "model": "orangeyouglad_mod:block/qingyuan_stone_slab_top"
+    }
+  }
+}

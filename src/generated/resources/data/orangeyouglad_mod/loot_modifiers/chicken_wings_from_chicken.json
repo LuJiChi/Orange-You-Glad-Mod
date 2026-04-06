@@ -1,0 +1,15 @@
+{
+  "type": "orangeyouglad_mod:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/chicken"
+    },
+    {
+      "chance": 0.8,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "count": 2,
+  "item": "orangeyouglad_mod:chicken_wing"
+}

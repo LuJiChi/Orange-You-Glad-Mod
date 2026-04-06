@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "orangeyouglad_mod:block/qingyuan_stone",
+    "side": "orangeyouglad_mod:block/qingyuan_stone",
+    "top": "orangeyouglad_mod:block/qingyuan_stone"
+  }
+}

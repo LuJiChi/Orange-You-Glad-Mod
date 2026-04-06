@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "orangeyouglad_mod:block/qingyuan_stone"
+  }
+}

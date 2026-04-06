@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "orangeyouglad_mod:block/orange_planks"
+  }
+}

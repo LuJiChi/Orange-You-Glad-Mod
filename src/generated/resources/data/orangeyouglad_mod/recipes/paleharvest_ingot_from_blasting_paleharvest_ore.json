@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.3,
+  "group": "paleharvest",
+  "ingredient": {
+    "item": "orangeyouglad_mod:paleharvest_ore"
+  },
+  "result": "orangeyouglad_mod:paleharvest_ingot"
+}

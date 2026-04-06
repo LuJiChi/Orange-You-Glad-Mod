@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "orangeyouglad_mod:block/qingyuan_stone"
+  }
+}

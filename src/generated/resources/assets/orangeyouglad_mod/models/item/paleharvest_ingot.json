@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "orangeyouglad_mod:item/paleharvest_ingot"
+  }
+}

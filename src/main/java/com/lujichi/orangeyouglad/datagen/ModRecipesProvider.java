@@ -1,0 +1,89 @@
+package com.lujichi.orangeyouglad.datagen;
+
+
+import com.lujichi.orangeyouglad.OrangeYouGladMod;
+import com.lujichi.orangeyouglad.block.ModBlocks;
+import com.lujichi.orangeyouglad.item.ModItems;
+import com.lujichi.orangeyouglad.item.custom.ModFuelItem;
+import net.minecraft.data.PackOutput;
+import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.crafting.AbstractCookingRecipe;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+
+import java.util.List;
+import java.util.function.Consumer;
+
+
+public class ModRecipesProvider extends RecipeProvider implements IConditionBuilder {
+
+    public ModRecipesProvider(PackOutput pOutput) {
+        super(pOutput);
+    }
+
+    @Override
+    protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
+        oreSmelting(pWriter, List.of(ModBlocks.PALEHARVEST_ORE.get()), RecipeCategory.MISC, ModItems.PALEHARVEST_INGOT.get(), 0.3F, 200, "paleharvest");
+        oreSmelting(pWriter, List.of(ModItems.RAW_PALEHARVEST.get()), RecipeCategory.MISC, ModItems.PALEHARVEST_INGOT.get(), 0.3F, 200, "paleharvest");
+        oreBlasting(pWriter, List.of(ModBlocks.PALEHARVEST_ORE.get()), RecipeCategory.MISC, ModItems.PALEHARVEST_INGOT.get(), 0.3F, 100, "paleharvest");
+        oreBlasting(pWriter, List.of(ModItems.RAW_PALEHARVEST.get()), RecipeCategory.MISC, ModItems.PALEHARVEST_INGOT.get(), 0.3F, 100, "paleharvest");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_PALEHARVEST_BLOCK.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.RAW_PALEHARVEST.get())
+                .unlockedBy(getHasName(ModItems.RAW_PALEHARVEST.get()), has(ModItems.RAW_PALEHARVEST.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALEHARVEST_INGOT_BLOCK.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.PALEHARVEST_INGOT.get())
+                .unlockedBy(getHasName(ModItems.PALEHARVEST_INGOT.get()), has(ModItems.PALEHARVEST_INGOT.get()))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLARITE_BLOCK.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.FLARITE.get())
+                .unlockedBy(getHasName(ModItems.FLARITE.get()), has(ModItems.FLARITE.get()))
+                .save(pWriter);
+
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_PALEHARVEST.get(), 9)
+                .requires(ModBlocks.RAW_PALEHARVEST_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.RAW_PALEHARVEST_BLOCK.get()), has(ModBlocks.RAW_PALEHARVEST_BLOCK.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PALEHARVEST_INGOT.get(), 9)
+                .requires(ModBlocks.PALEHARVEST_INGOT_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.PALEHARVEST_INGOT_BLOCK.get()), has(ModBlocks.PALEHARVEST_INGOT_BLOCK.get()))
+                .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.FLARITE.get(), 9)
+                .requires(ModBlocks.FLARITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.FLARITE_BLOCK.get()), has(ModBlocks.FLARITE_BLOCK.get()))
+                .save(pWriter);
+
+    }
+
+
+    protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
+        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");
+    }
+
+    protected static void oreBlasting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
+        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.BLASTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_blasting");
+    }
+
+    protected static void oreCooking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
+        for(ItemLike itemlike : pIngredients) {
+            SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime,
+                    pCookingSerializer).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
+                    .save(pFinishedRecipeConsumer, OrangeYouGladMod.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
+        }
+
+    }
+}

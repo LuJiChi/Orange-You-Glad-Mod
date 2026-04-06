@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "orangeyouglad_mod:item/paleharvest_shovel"
+  }
+}

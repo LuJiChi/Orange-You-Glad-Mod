@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "orangeyouglad_mod:block/orange_planks"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "orangeyouglad_mod:block/qingyuan_stone_pressure_plate"
+    },
+    "powered=true": {
+      "model": "orangeyouglad_mod:block/qingyuan_stone_pressure_plate_down"
+    }
+  }
+}

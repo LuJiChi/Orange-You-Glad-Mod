@@ -1,0 +1,19 @@
+{
+  "type": "orangeyouglad_mod:flarite_furnace_smelting",
+  "ingredients": [
+    {
+      "item": "orangeyouglad_mod:raw_paleharvest"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "output": {
+    "item": "orangeyouglad_mod:paleharvest_ingot",
+    "count": 8
+  },
+  "talent_cost": 0
+}
