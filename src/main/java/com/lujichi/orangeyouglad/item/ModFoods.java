@@ -18,6 +18,10 @@ public class ModFoods {
             .saturationMod(0.2F)
             .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 200), 0.3F)
             .build();
+    public static final FoodProperties COOKED_CHICKEN_WING = new FoodProperties.Builder()
+            .nutrition(6)
+            .saturationMod(0.8f)
+            .build();
     public static final FoodProperties ONION = new FoodProperties.Builder()
             .nutrition(2)
             .saturationMod(0.1F)

@@ -85,7 +85,22 @@ public class FlariteFurnaceCategory implements IRecipeCategory<FlariteFurnaceRec
             int x = startX;
             int y = startY + i * slotSpacing;
 
-            builder.addSlot(RecipeIngredientRole.INPUT, x, y).addIngredients(ingredients.get(i));
+            // 获取配方中该材料需要的数量
+            int requiredCount = recipe.getRequiredCounts()[i];
+
+            // 创建带有数量的ItemStack来显示
+            ItemStack[] matchingStacks = ingredients.get(i).getItems();
+            if (matchingStacks.length > 0) {
+                ItemStack displayStack = matchingStacks[0].copy();
+                displayStack.setCount(requiredCount);
+
+                builder.addSlot(RecipeIngredientRole.INPUT, x, y)
+                        .addItemStack(displayStack);
+            } else {
+                // 如果没有匹配的物品，使用默认的添加方式
+                builder.addSlot(RecipeIngredientRole.INPUT, x, y)
+                        .addIngredients(ingredients.get(i));
+            }
         }
 
 

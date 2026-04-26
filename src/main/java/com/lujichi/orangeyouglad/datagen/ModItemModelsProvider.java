@@ -21,6 +21,7 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicItem(ModItems.ORANGE.get());
         basicItem(ModItems.SALTED_FISH.get());
         basicItem(ModItems.CHICKEN_WING.get());
+        basicItem(ModItems.COOKED_CHICKEN_WING.get());
         basicItem(ModItems.RAW_PALEHARVEST.get());
         basicItem(ModItems.PALEHARVEST_INGOT.get());
         basicItem(ModItems.FLARITE.get());

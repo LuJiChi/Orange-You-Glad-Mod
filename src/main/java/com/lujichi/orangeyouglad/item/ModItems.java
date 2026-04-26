@@ -21,6 +21,8 @@ public class ModItems {
             ITEMS.register("salted_fish", () -> new Item(new Item.Properties().food(ModFoods.SALTED_FISH)));
     public static final RegistryObject<Item> CHICKEN_WING =
             ITEMS.register("chicken_wing", () -> new Item(new Item.Properties().food(ModFoods.CHICKEN_WING)));
+    public static final RegistryObject<Item> COOKED_CHICKEN_WING =
+            ITEMS.register("cooked_chicken_wing", () -> new Item(new Item.Properties().food(ModFoods.COOKED_CHICKEN_WING)));
     public static final RegistryObject<Item> ONION =
             ITEMS.register("onion", () -> new ItemNameBlockItem(ModBlocks.ONION_CROP.get(),new Item.Properties().food(ModFoods.ONION)));
 

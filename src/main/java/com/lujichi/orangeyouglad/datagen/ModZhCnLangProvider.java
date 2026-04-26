@@ -18,6 +18,7 @@ public class ModZhCnLangProvider extends LanguageProvider {
         add(ModItems.ORANGE.get(), "橙子");
         add(ModItems.SALTED_FISH.get(), "咸鱼");
         add(ModItems.CHICKEN_WING.get(), "鸡翅");
+        add(ModItems.COOKED_CHICKEN_WING.get(), "熟鸡翅");
         add(ModItems.RAW_PALEHARVEST.get(), "粗白藏");
         add(ModItems.PALEHARVEST_INGOT.get(), "白藏锭");
         add(ModItems.FLARITE.get(), "才火煤");

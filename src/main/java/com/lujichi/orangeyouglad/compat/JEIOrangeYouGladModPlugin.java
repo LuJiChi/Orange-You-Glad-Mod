@@ -38,7 +38,7 @@ public class JEIOrangeYouGladModPlugin implements IModPlugin {
 
     @Override
     public void registerGuiHandlers(IGuiHandlerRegistration registration) {
-        registration.addRecipeClickArea(FlariteFurnaceScreen.class, 45, 13, 101, 62,
+        registration.addRecipeClickArea(FlariteFurnaceScreen.class, 75, 25, 40, 30,
                 FlariteFurnaceCategory.FLARITE_FURNACE_TYPE);
     }
 }

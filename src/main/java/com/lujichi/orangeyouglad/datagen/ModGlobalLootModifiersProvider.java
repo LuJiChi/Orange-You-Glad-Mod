@@ -18,7 +18,7 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
     @Override
     protected void start() {
         add("chicken_wings_from_chicken", new AddItemModifier(new LootItemCondition[]{
-                new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft","entities/chicken")).build(),
+                new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft", "entities/chicken")).build(),
                 LootItemRandomChanceCondition.randomChance(0.8f).build()}, ModItems.CHICKEN_WING.get(), 2));
 
     }

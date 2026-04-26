@@ -18,6 +18,7 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModItems.ORANGE.get(), "Orange");
         add(ModItems.SALTED_FISH.get(), "Salted Fish");
         add(ModItems.CHICKEN_WING.get(), "Chicken Wing");
+        add(ModItems.COOKED_CHICKEN_WING.get(), "Cooked Chicken Wing");
         add(ModItems.RAW_PALEHARVEST.get(), "Raw Paleharvest");
         add(ModItems.PALEHARVEST_INGOT.get(), "Paleharvest Ingot");
         add(ModItems.FLARITE.get(), "Flarite");

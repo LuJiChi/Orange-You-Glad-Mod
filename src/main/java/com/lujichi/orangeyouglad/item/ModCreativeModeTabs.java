@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("itemGroup.orangeyouglad_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.CHICKEN_WING.get());
+                        pOutput.accept(ModItems.COOKED_CHICKEN_WING.get());
                         pOutput.accept(ModItems.SALTED_FISH.get());
                         pOutput.accept(ModItems.ORANGE.get());
                         pOutput.accept(ModItems.RAW_PALEHARVEST.get());
