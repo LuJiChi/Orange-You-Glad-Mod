@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.3,
+  "group": "dango",
+  "ingredient": {
+    "item": "orangeyouglad_mod:dango_ore"
+  },
+  "result": "orangeyouglad_mod:dango_ingot"
+}

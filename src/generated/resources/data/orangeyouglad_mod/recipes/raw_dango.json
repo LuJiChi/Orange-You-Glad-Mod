@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "orangeyouglad_mod:raw_dango_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "orangeyouglad_mod:raw_dango"
+  }
+}
