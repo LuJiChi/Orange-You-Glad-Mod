@@ -19,7 +19,7 @@ import java.util.List;
 
 public class ModPlacedFeatures {
 
-    public static final ResourceKey<PlacedFeature> PALEHARVEST_ORE_PLACED_KEY = registerKey("paleharvest_ore_placed");
+    public static final ResourceKey<PlacedFeature> DANGO_ORE_PLACED_KEY = registerKey("dango_ore_placed");
     public static final ResourceKey<PlacedFeature> FLARITE_ORE_PLACED_KEY = registerKey("flarite_ore_placed");
 
     public static final ResourceKey<PlacedFeature> ORANGE_PLACED_KEY = registerKey("orange_placed");
@@ -27,7 +27,7 @@ public class ModPlacedFeatures {
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        register(context, PALEHARVEST_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_PALEHARVEST_ORE_KEY),
+        register(context, DANGO_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_DANGO_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(5,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 

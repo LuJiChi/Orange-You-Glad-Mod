@@ -1,6 +1,8 @@
 {
   "entries": [
-    "orangeyouglad_mod:chicken_wings_from_chicken"
+    "orangeyouglad_mod:salted_fish_from_treasure",
+    "orangeyouglad_mod:chicken_wings_from_chicken",
+    "orangeyouglad_mod:salted_fish_from_fishing"
   ],
   "replace": false
 }

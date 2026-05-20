@@ -12,6 +12,9 @@ import com.lujichi.orangeyouglad.loot.ModLootModifier;
 import com.lujichi.orangeyouglad.recipe.ModRecipes;
 import com.lujichi.orangeyouglad.screen.FlariteFurnaceScreen;
 import com.lujichi.orangeyouglad.screen.ModMenuTypes;
+import com.lujichi.orangeyouglad.worldgen.biome.ModBiomes;
+import com.lujichi.orangeyouglad.worldgen.biome.ModTerrablender;
+import com.lujichi.orangeyouglad.worldgen.biome.surface.ModSurfaceRules;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -30,6 +33,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(OrangeYouGladMod.MOD_ID)
@@ -79,6 +83,7 @@ public class OrangeYouGladMod
         ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
         ModMenuTypes.MENUS.register(modEventBus);
         ModRecipes.SERIALIZERS.register(modEventBus);
+        ModTerrablender.registerBiome();
 
         // Register the Deferred Register to the mod event bus so blocks get registered
         /*BLOCKS.register(modEventBus);
@@ -99,6 +104,10 @@ public class OrangeYouGladMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+        event.enqueueWork(()->{
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
+        });
+
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
 

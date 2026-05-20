@@ -22,8 +22,8 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicItem(ModItems.SALTED_FISH.get());
         basicItem(ModItems.CHICKEN_WING.get());
         basicItem(ModItems.COOKED_CHICKEN_WING.get());
-        basicItem(ModItems.RAW_PALEHARVEST.get());
-        basicItem(ModItems.PALEHARVEST_INGOT.get());
+        basicItem(ModItems.RAW_DANGO.get());
+        basicItem(ModItems.DANGO_INGOT.get());
         basicItem(ModItems.FLARITE.get());
         basicItem(ModItems.ONION.get());
 
@@ -35,11 +35,11 @@ public class ModItemModelsProvider extends ItemModelProvider {
 
         basicItem(ModBlocks.ORANGE_DOOR.get().asItem());
 
-        handleItem(ModItems.PALEHARVEST_SWORD);
-        handleItem(ModItems.PALEHARVEST_SHOVEL);
-        handleItem(ModItems.PALEHARVEST_PICKAXE);
-        handleItem(ModItems.PALEHARVEST_HOE);
-        handleItem(ModItems.PALEHARVEST_AXE);
+        handleItem(ModItems.DANGO_SWORD);
+        handleItem(ModItems.DANGO_SHOVEL);
+        handleItem(ModItems.DANGO_PICKAXE);
+        handleItem(ModItems.DANGO_HOE);
+        handleItem(ModItems.DANGO_AXE);
 
         saplingItem(ModBlocks.ORANGE_SAPLING);
 

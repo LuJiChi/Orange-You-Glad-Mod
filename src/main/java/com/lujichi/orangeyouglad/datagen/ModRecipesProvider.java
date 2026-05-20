@@ -24,24 +24,24 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
-        oreSmelting(pWriter, List.of(ModBlocks.PALEHARVEST_ORE.get()), RecipeCategory.MISC, ModItems.PALEHARVEST_INGOT.get(), 0.3F, 200, "paleharvest");
-        oreSmelting(pWriter, List.of(ModItems.RAW_PALEHARVEST.get()), RecipeCategory.MISC, ModItems.PALEHARVEST_INGOT.get(), 0.3F, 200, "paleharvest");
-        oreBlasting(pWriter, List.of(ModBlocks.PALEHARVEST_ORE.get()), RecipeCategory.MISC, ModItems.PALEHARVEST_INGOT.get(), 0.3F, 100, "paleharvest");
-        oreBlasting(pWriter, List.of(ModItems.RAW_PALEHARVEST.get()), RecipeCategory.MISC, ModItems.PALEHARVEST_INGOT.get(), 0.3F, 100, "paleharvest");
+        oreSmelting(pWriter, List.of(ModBlocks.DANGO_ORE.get()), RecipeCategory.MISC, ModItems.DANGO_INGOT.get(), 0.3F, 200, "dango");
+        oreSmelting(pWriter, List.of(ModItems.RAW_DANGO.get()), RecipeCategory.MISC, ModItems.DANGO_INGOT.get(), 0.3F, 200, "dango");
+        oreBlasting(pWriter, List.of(ModBlocks.DANGO_ORE.get()), RecipeCategory.MISC, ModItems.DANGO_INGOT.get(), 0.3F, 100, "dango");
+        oreBlasting(pWriter, List.of(ModItems.RAW_DANGO.get()), RecipeCategory.MISC, ModItems.DANGO_INGOT.get(), 0.3F, 100, "dango");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_PALEHARVEST_BLOCK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_DANGO_BLOCK.get())
                 .pattern("###")
                 .pattern("###")
                 .pattern("###")
-                .define('#', ModItems.RAW_PALEHARVEST.get())
-                .unlockedBy(getHasName(ModItems.RAW_PALEHARVEST.get()), has(ModItems.RAW_PALEHARVEST.get()))
+                .define('#', ModItems.RAW_DANGO.get())
+                .unlockedBy(getHasName(ModItems.RAW_DANGO.get()), has(ModItems.RAW_DANGO.get()))
                 .save(pWriter);
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALEHARVEST_INGOT_BLOCK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DANGO_INGOT_BLOCK.get())
                 .pattern("###")
                 .pattern("###")
                 .pattern("###")
-                .define('#', ModItems.PALEHARVEST_INGOT.get())
-                .unlockedBy(getHasName(ModItems.PALEHARVEST_INGOT.get()), has(ModItems.PALEHARVEST_INGOT.get()))
+                .define('#', ModItems.DANGO_INGOT.get())
+                .unlockedBy(getHasName(ModItems.DANGO_INGOT.get()), has(ModItems.DANGO_INGOT.get()))
                 .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FLARITE_BLOCK.get())
                 .pattern("###")
@@ -53,13 +53,13 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
 
 
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_PALEHARVEST.get(), 9)
-                .requires(ModBlocks.RAW_PALEHARVEST_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.RAW_PALEHARVEST_BLOCK.get()), has(ModBlocks.RAW_PALEHARVEST_BLOCK.get()))
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_DANGO.get(), 9)
+                .requires(ModBlocks.RAW_DANGO_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.RAW_DANGO_BLOCK.get()), has(ModBlocks.RAW_DANGO_BLOCK.get()))
                 .save(pWriter);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PALEHARVEST_INGOT.get(), 9)
-                .requires(ModBlocks.PALEHARVEST_INGOT_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.PALEHARVEST_INGOT_BLOCK.get()), has(ModBlocks.PALEHARVEST_INGOT_BLOCK.get()))
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.DANGO_INGOT.get(), 9)
+                .requires(ModBlocks.DANGO_INGOT_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.DANGO_INGOT_BLOCK.get()), has(ModBlocks.DANGO_INGOT_BLOCK.get()))
                 .save(pWriter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.FLARITE.get(), 9)
                 .requires(ModBlocks.FLARITE_BLOCK.get())

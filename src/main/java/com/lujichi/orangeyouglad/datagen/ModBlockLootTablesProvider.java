@@ -29,12 +29,12 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         add(ModBlocks.ORANGE_LEAVES.get(),block -> createLeavesDrops(block,ModBlocks.ORANGE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         dropSelf(ModBlocks.QINGYUAN_STONE.get());
-        dropSelf(ModBlocks.RAW_PALEHARVEST_BLOCK.get());
-        dropSelf(ModBlocks.PALEHARVEST_INGOT_BLOCK.get());
+        dropSelf(ModBlocks.RAW_DANGO_BLOCK.get());
+        dropSelf(ModBlocks.DANGO_INGOT_BLOCK.get());
         dropSelf(ModBlocks.FLARITE_BLOCK.get());
         dropSelf(ModBlocks.CHISELED_QINGYUAN_STONE.get());
-        add(ModBlocks.PALEHARVEST_ORE.get(),block -> createOreDrop(ModBlocks.PALEHARVEST_ORE.get(), ModItems.RAW_PALEHARVEST.get()));
-        add(ModBlocks.DEEPSLATE_PALEHARVEST_ORE.get(), block -> createOreDrop(ModBlocks.DEEPSLATE_PALEHARVEST_ORE.get(), ModItems.RAW_PALEHARVEST.get()));
+        add(ModBlocks.DANGO_ORE.get(), block -> createOreDrop(ModBlocks.DANGO_ORE.get(), ModItems.RAW_DANGO.get()));
+        add(ModBlocks.DEEPSLATE_DANGO_ORE.get(), block -> createOreDrop(ModBlocks.DEEPSLATE_DANGO_ORE.get(), ModItems.RAW_DANGO.get()));
         add(ModBlocks.FLARITE_ORE.get(),block -> createOreDrop(ModBlocks.FLARITE_ORE.get(), ModItems.FLARITE.get()));
         add(ModBlocks.DEEPSLATE_FLARITE_ORE.get(), block -> createOreDrop(ModBlocks.DEEPSLATE_FLARITE_ORE.get(), ModItems.FLARITE.get()));
 

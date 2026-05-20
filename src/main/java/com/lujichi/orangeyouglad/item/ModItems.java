@@ -27,24 +27,24 @@ public class ModItems {
             ITEMS.register("onion", () -> new ItemNameBlockItem(ModBlocks.ONION_CROP.get(),new Item.Properties().food(ModFoods.ONION)));
 
 
-    public static final RegistryObject<Item> RAW_PALEHARVEST =
-            ITEMS.register("raw_paleharvest", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PALEHARVEST_INGOT =
-            ITEMS.register("paleharvest_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_DANGO =
+            ITEMS.register("raw_dango", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DANGO_INGOT =
+            ITEMS.register("dango_ingot", () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> FLARITE =
             ITEMS.register("flarite", () -> new ModFuelItem(new Item.Properties(), 2400));
 
-    public static final RegistryObject<Item> PALEHARVEST_SWORD =
-            ITEMS.register("paleharvest_sword", () -> new SwordItem(ModToolTiers.PALEHARVEST_INGOT, 3, -2.4F, new Item.Properties()));
-    public static final RegistryObject<Item> PALEHARVEST_PICKAXE =
-            ITEMS.register("paleharvest_pickaxe", () -> new PickaxeItem(ModToolTiers.PALEHARVEST_INGOT, 3, -2.8F, new Item.Properties()));
-    public static final RegistryObject<Item> PALEHARVEST_AXE =
-            ITEMS.register("paleharvest_axe", () -> new AxeItem(ModToolTiers.PALEHARVEST_INGOT, 3, -2.8F, new Item.Properties()));
-    public static final RegistryObject<Item> PALEHARVEST_SHOVEL =
-            ITEMS.register("paleharvest_shovel", () -> new ShovelItem(ModToolTiers.PALEHARVEST_INGOT, 3, -2.8F, new Item.Properties()));
-    public static final RegistryObject<Item> PALEHARVEST_HOE =
-            ITEMS.register("paleharvest_hoe", () -> new HoeItem(ModToolTiers.PALEHARVEST_INGOT, 3, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> DANGO_SWORD =
+            ITEMS.register("dango_sword", () -> new SwordItem(ModToolTiers.DANGO_INGOT, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> DANGO_PICKAXE =
+            ITEMS.register("dango_pickaxe", () -> new PickaxeItem(ModToolTiers.DANGO_INGOT, 3, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> DANGO_AXE =
+            ITEMS.register("dango_axe", () -> new AxeItem(ModToolTiers.DANGO_INGOT, 3, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> DANGO_SHOVEL =
+            ITEMS.register("dango_shovel", () -> new ShovelItem(ModToolTiers.DANGO_INGOT, 3, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> DANGO_HOE =
+            ITEMS.register("dango_hoe", () -> new HoeItem(ModToolTiers.DANGO_INGOT, 3, -2.8F, new Item.Properties()));
 
 
     public static final RegistryObject<Item> TUANZI_SPAWN_EGG =

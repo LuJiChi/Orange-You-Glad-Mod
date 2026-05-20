@@ -6,7 +6,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolTiers implements Tier {
-    PALEHARVEST_INGOT(2, 1024, 8.0F, 2.0F, 16, () -> Ingredient.of(ModItems.PALEHARVEST_INGOT.get()));
+    DANGO_INGOT(2, 1024, 8.0F, 2.0F, 16, () -> Ingredient.of(ModItems.DANGO_INGOT.get()));
 
     private final int level;
     private final int uses;

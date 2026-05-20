@@ -33,10 +33,10 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_FLARITE_ORE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.PALEHARVEST_ORE.get(),
-                        ModBlocks.RAW_PALEHARVEST_BLOCK.get(),
-                        ModBlocks.PALEHARVEST_INGOT_BLOCK.get(),
-                        ModBlocks.DEEPSLATE_PALEHARVEST_ORE.get());
+                .add(ModBlocks.DANGO_ORE.get(),
+                        ModBlocks.RAW_DANGO_BLOCK.get(),
+                        ModBlocks.DANGO_INGOT_BLOCK.get(),
+                        ModBlocks.DEEPSLATE_DANGO_ORE.get());
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.CHISELED_QINGYUAN_STONE.get());

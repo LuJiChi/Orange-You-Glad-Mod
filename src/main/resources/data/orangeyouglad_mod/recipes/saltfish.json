@@ -1,0 +1,13 @@
+{
+  "type": "orangeyouglad_mod:flarite_furnace_smelting",
+  "ingredients": [
+    {
+      "tag": "minecraft:fishes"
+    }
+  ],
+  "output": {
+    "item": "orangeyouglad_mod:salted_fish",
+    "count": 1
+  },
+  "talent_cost": 100
+}

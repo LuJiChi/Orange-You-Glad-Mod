@@ -25,13 +25,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         simpleBlockWithItem(ModBlocks.ORANGE_PLANKS.get(), cubeAll(ModBlocks.ORANGE_PLANKS.get()));
         simpleBlockWithItem(ModBlocks.QINGYUAN_STONE.get(), cubeAll(ModBlocks.QINGYUAN_STONE.get()));
-        simpleBlockWithItem(ModBlocks.PALEHARVEST_ORE.get(), cubeAll(ModBlocks.PALEHARVEST_ORE.get()));
-        simpleBlockWithItem(ModBlocks.RAW_PALEHARVEST_BLOCK.get(), cubeAll(ModBlocks.RAW_PALEHARVEST_BLOCK.get()));
-        simpleBlockWithItem(ModBlocks.PALEHARVEST_INGOT_BLOCK.get(), cubeAll(ModBlocks.PALEHARVEST_INGOT_BLOCK.get()));
+        simpleBlockWithItem(ModBlocks.DANGO_ORE.get(), cubeAll(ModBlocks.DANGO_ORE.get()));
+        simpleBlockWithItem(ModBlocks.RAW_DANGO_BLOCK.get(), cubeAll(ModBlocks.RAW_DANGO_BLOCK.get()));
+        simpleBlockWithItem(ModBlocks.DANGO_INGOT_BLOCK.get(), cubeAll(ModBlocks.DANGO_INGOT_BLOCK.get()));
         simpleBlockWithItem(ModBlocks.FLARITE_ORE.get(), cubeAll(ModBlocks.FLARITE_ORE.get()));
         simpleBlockWithItem(ModBlocks.FLARITE_BLOCK.get(), cubeAll(ModBlocks.FLARITE_BLOCK.get()));
         simpleBlockWithItem(ModBlocks.CHISELED_QINGYUAN_STONE.get(), cubeAll(ModBlocks.CHISELED_QINGYUAN_STONE.get()));
-        simpleBlockWithItem(ModBlocks.DEEPSLATE_PALEHARVEST_ORE.get(), cubeAll(ModBlocks.DEEPSLATE_PALEHARVEST_ORE.get()));
+        simpleBlockWithItem(ModBlocks.DEEPSLATE_DANGO_ORE.get(), cubeAll(ModBlocks.DEEPSLATE_DANGO_ORE.get()));
         simpleBlockWithItem(ModBlocks.DEEPSLATE_FLARITE_ORE.get(), cubeAll(ModBlocks.DEEPSLATE_FLARITE_ORE.get()));
 
         stairsBlock(ModBlocks.ORANGE_STAIRS.get(), blockTexture(ModBlocks.ORANGE_PLANKS.get()));

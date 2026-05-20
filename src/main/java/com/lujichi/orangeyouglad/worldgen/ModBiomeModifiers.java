@@ -15,9 +15,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModBiomeModifiers {
 
-    public static final ResourceKey<BiomeModifier> ADD_PALEHARVEST_ORE_KEY = registerKey("add_paleharvest_ore");
+    public static final ResourceKey<BiomeModifier> ADD_DANGO_ORE_KEY = registerKey("add_dango_ore");
 
-    public static final ResourceKey<BiomeModifier> ADD_FLORITE_ORE_KEY = registerKey("add_florite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_FLARITE_ORE_KEY = registerKey("add_flarite_ore");
 
     public static final ResourceKey<BiomeModifier> ADD_TREE_ORANGE = registerKey("add_tree_orange");
 
@@ -25,12 +25,12 @@ public class ModBiomeModifiers {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
 
-        context.register(ADD_PALEHARVEST_ORE_KEY, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_DANGO_ORE_KEY, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.PALEHARVEST_ORE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.DANGO_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_FLORITE_ORE_KEY, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        context.register(ADD_FLARITE_ORE_KEY, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FLARITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));

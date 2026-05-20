@@ -19,8 +19,8 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModItems.SALTED_FISH.get(), "Salted Fish");
         add(ModItems.CHICKEN_WING.get(), "Chicken Wing");
         add(ModItems.COOKED_CHICKEN_WING.get(), "Cooked Chicken Wing");
-        add(ModItems.RAW_PALEHARVEST.get(), "Raw Paleharvest");
-        add(ModItems.PALEHARVEST_INGOT.get(), "Paleharvest Ingot");
+        add(ModItems.RAW_DANGO.get(), "Raw Dango Block");
+        add(ModItems.DANGO_INGOT.get(), "Dango Ingot");
         add(ModItems.FLARITE.get(), "Flarite");
         add(ModItems.ONION.get(), "Onion");
 
@@ -38,10 +38,10 @@ public class ModEnUsLangProvider extends LanguageProvider {
 
 
         add(ModBlocks.QINGYUAN_STONE.get(), "Qingyuan Stone");
-        add(ModBlocks.PALEHARVEST_ORE.get(), "Paleharvest Ore");
-        add(ModBlocks.DEEPSLATE_PALEHARVEST_ORE.get(), "Deepslate Paleharvest Ore");
-        add(ModBlocks.RAW_PALEHARVEST_BLOCK.get(), "Raw Paleharvest Block");
-        add(ModBlocks.PALEHARVEST_INGOT_BLOCK.get(), "Paleharvest Ingot Block");
+        add(ModBlocks.DANGO_ORE.get(), "Dango Ore");
+        add(ModBlocks.DEEPSLATE_DANGO_ORE.get(), "Deepslate Dango Ore");
+        add(ModBlocks.RAW_DANGO_BLOCK.get(), "Raw Dango Block");
+        add(ModBlocks.DANGO_INGOT_BLOCK.get(), "Dango Ingot Block");
         add(ModBlocks.FLARITE_ORE.get(), "Flarite Ore");
         add(ModBlocks.DEEPSLATE_FLARITE_ORE.get(), "Deepslate Flarite Ore");
         add(ModBlocks.FLARITE_BLOCK.get(), "Flarite Block");
@@ -65,11 +65,11 @@ public class ModEnUsLangProvider extends LanguageProvider {
 
 
 
-        add(ModItems.PALEHARVEST_SWORD.get(), "Paleharvest Sword");
-        add(ModItems.PALEHARVEST_PICKAXE.get(), "Paleharvest Pickaxe");
-        add(ModItems.PALEHARVEST_AXE.get(), "Paleharvest Axe");
-        add(ModItems.PALEHARVEST_SHOVEL.get(), "Paleharvest Shovel");
-        add(ModItems.PALEHARVEST_HOE.get(), "Paleharvest Hoe");
+        add(ModItems.DANGO_SWORD.get(), "Dango Sword");
+        add(ModItems.DANGO_PICKAXE.get(), "Dango Pickaxe");
+        add(ModItems.DANGO_AXE.get(), "Dango Axe");
+        add(ModItems.DANGO_SHOVEL.get(), "Dango Shovel");
+        add(ModItems.DANGO_HOE.get(), "Dango Hoe");
         add(ModItems.TUANZI_SPAWN_EGG.get(), "Tuanzi Spawn Egg");
 
         add(ModEffects.HARVEST.get(), "Harvest");

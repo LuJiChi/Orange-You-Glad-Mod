@@ -79,14 +79,14 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> QINGYUAN_STONE =
             registerBlock("qingyuan_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
-    public static final RegistryObject<Block> PALEHARVEST_ORE =
-            registerBlock("paleharvest_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE)));
-    public static final RegistryObject<Block> DEEPSLATE_PALEHARVEST_ORE =
-            registerBlock("deepslate_paleharvest_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_GOLD_ORE)));
-    public static final RegistryObject<Block> RAW_PALEHARVEST_BLOCK =
-            registerBlock("raw_paleharvest_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F,6.0F)));
-    public static final RegistryObject<Block> PALEHARVEST_INGOT_BLOCK =
-            registerBlock("paleharvest_ingot_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F,6.0F)));
+    public static final RegistryObject<Block> DANGO_ORE =
+            registerBlock("dango_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE)));
+    public static final RegistryObject<Block> DEEPSLATE_DANGO_ORE =
+            registerBlock("deepslate_dango_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_GOLD_ORE)));
+    public static final RegistryObject<Block> RAW_DANGO_BLOCK =
+            registerBlock("raw_dango_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F,6.0F)));
+    public static final RegistryObject<Block> DANGO_INGOT_BLOCK =
+            registerBlock("dango_ingot_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F,6.0F)));
     public static final RegistryObject<Block> FLARITE_ORE =
             registerBlock("flarite_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
     public static final RegistryObject<Block> DEEPSLATE_FLARITE_ORE =

@@ -2,16 +2,16 @@
   "type": "orangeyouglad_mod:flarite_furnace_smelting",
   "ingredients": [
     {
-      "item": "minecraft:coal",
+      "item": "minecraft:pink_petals",
       "count": 1
     },
     {
-      "item": "minecraft:gold_ingot",
-      "count": 2
+      "item": "minecraft:stone",
+      "count": 1
     }
   ],
   "output": {
-    "item": "minecraft:diamond",
+    "item": "orangeyouglad_mod:qingyuan_stone",
     "count": 1
   },
   "talent_cost": 500

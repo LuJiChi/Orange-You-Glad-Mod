@@ -32,5 +32,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                         ModBlocks.ORANGE_WOOD.get().asItem(),
                         ModBlocks.STRIPPED_ORANGE_LOG.get().asItem(),
                         ModBlocks.STRIPPED_ORANGE_WOOD.get().asItem());
+        tag(ItemTags.FISHES)
+                .add(ModItems.SALTED_FISH.get());
     }
 }

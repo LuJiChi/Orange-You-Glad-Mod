@@ -24,7 +24,7 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_PALEHARVEST_ORE_KEY = registerKey("paleharvest_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_DANGO_ORE_KEY = registerKey("dango_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_FLARITE_ORE_KEY = registerKey("flarite_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> ORANGE_KEY = registerKey("orange");
@@ -34,12 +34,12 @@ public class ModConfiguredFeatures {
         RuleTest deepslateReplaceable = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
 
-        List<OreConfiguration.TargetBlockState> overworldPaleharvestOre = List.of(OreConfiguration.target(stoneReplaceable,
-                ModBlocks.PALEHARVEST_ORE.get().defaultBlockState()),
+        List<OreConfiguration.TargetBlockState> overworldDangoOre = List.of(OreConfiguration.target(stoneReplaceable,
+                ModBlocks.DANGO_ORE.get().defaultBlockState()),
                         OreConfiguration.target(deepslateReplaceable,
-                                ModBlocks.DEEPSLATE_PALEHARVEST_ORE.get().defaultBlockState()));
+                                ModBlocks.DEEPSLATE_DANGO_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_PALEHARVEST_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPaleharvestOre, 6));
+        register(context, OVERWORLD_DANGO_ORE_KEY, Feature.ORE, new OreConfiguration(overworldDangoOre, 6));
 
         List<OreConfiguration.TargetBlockState> overworldFlariteOre = List.of(OreConfiguration.target(stoneReplaceable,
                 ModBlocks.FLARITE_ORE.get().defaultBlockState()),

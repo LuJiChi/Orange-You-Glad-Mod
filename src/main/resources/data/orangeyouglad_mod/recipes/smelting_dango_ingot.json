@@ -2,7 +2,7 @@
   "type": "orangeyouglad_mod:flarite_furnace_smelting",
   "ingredients": [
     {
-      "item": "orangeyouglad_mod:raw_paleharvest"
+      "item": "orangeyouglad_mod:raw_dango"
     },
     {
       "item": "minecraft:diamond"
@@ -12,7 +12,7 @@
     }
   ],
   "output": {
-    "item": "orangeyouglad_mod:paleharvest_ingot",
+    "item": "orangeyouglad_mod:dango_ingot",
     "count": 8
   },
   "talent_cost": 0

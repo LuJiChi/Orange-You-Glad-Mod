@@ -19,8 +19,8 @@ public class ModZhCnLangProvider extends LanguageProvider {
         add(ModItems.SALTED_FISH.get(), "咸鱼");
         add(ModItems.CHICKEN_WING.get(), "鸡翅");
         add(ModItems.COOKED_CHICKEN_WING.get(), "熟鸡翅");
-        add(ModItems.RAW_PALEHARVEST.get(), "粗白藏");
-        add(ModItems.PALEHARVEST_INGOT.get(), "白藏锭");
+        add(ModItems.RAW_DANGO.get(), "粗团子");
+        add(ModItems.DANGO_INGOT.get(), "团子锭");
         add(ModItems.FLARITE.get(), "才火煤");
         add(ModItems.ONION.get(), "洋葱");
 
@@ -38,10 +38,10 @@ public class ModZhCnLangProvider extends LanguageProvider {
 
 
         add(ModBlocks.QINGYUAN_STONE.get(), "清源石");
-        add(ModBlocks.PALEHARVEST_ORE.get(), "白藏矿");
-        add(ModBlocks.DEEPSLATE_PALEHARVEST_ORE.get(), "深白藏矿");
-        add(ModBlocks.RAW_PALEHARVEST_BLOCK.get(), "粗白藏块");
-        add(ModBlocks.PALEHARVEST_INGOT_BLOCK.get(), "白藏块");
+        add(ModBlocks.DANGO_ORE.get(), "团子矿");
+        add(ModBlocks.DEEPSLATE_DANGO_ORE.get(), "深团子矿");
+        add(ModBlocks.RAW_DANGO_BLOCK.get(), "粗团子块");
+        add(ModBlocks.DANGO_INGOT_BLOCK.get(), "团子块");
         add(ModBlocks.FLARITE_ORE.get(), "才火矿");
         add(ModBlocks.DEEPSLATE_FLARITE_ORE.get(), "深才火矿");
         add(ModBlocks.FLARITE_BLOCK.get(), "才火块");
@@ -65,11 +65,11 @@ public class ModZhCnLangProvider extends LanguageProvider {
 
 
 
-        add(ModItems.PALEHARVEST_SWORD.get(), "白藏剑");
-        add(ModItems.PALEHARVEST_PICKAXE.get(), "白藏镐");
-        add(ModItems.PALEHARVEST_AXE.get(), "白藏斧");
-        add(ModItems.PALEHARVEST_SHOVEL.get(), "白藏锹");
-        add(ModItems.PALEHARVEST_HOE.get(), "白藏锄");
+        add(ModItems.DANGO_SWORD.get(), "团子剑");
+        add(ModItems.DANGO_PICKAXE.get(), "团子镐");
+        add(ModItems.DANGO_AXE.get(), "团子斧");
+        add(ModItems.DANGO_SHOVEL.get(), "团子铁锹");
+        add(ModItems.DANGO_HOE.get(), "团子锄");
         add(ModItems.TUANZI_SPAWN_EGG.get(), "团子刷怪蛋");
 
         add(ModEffects.HARVEST.get(), "丰收");

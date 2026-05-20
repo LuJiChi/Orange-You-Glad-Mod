@@ -23,8 +23,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.COOKED_CHICKEN_WING.get());
                         pOutput.accept(ModItems.SALTED_FISH.get());
                         pOutput.accept(ModItems.ORANGE.get());
-                        pOutput.accept(ModItems.RAW_PALEHARVEST.get());
-                        pOutput.accept(ModItems.PALEHARVEST_INGOT.get());
+                        pOutput.accept(ModItems.RAW_DANGO.get());
+                        pOutput.accept(ModItems.DANGO_INGOT.get());
                         pOutput.accept(ModItems.FLARITE.get());
                         pOutput.accept(ModItems.ONION.get());
 
@@ -37,10 +37,10 @@ public class ModCreativeModeTabs {
 
 
                         pOutput.accept(ModBlocks.QINGYUAN_STONE.get());
-                        pOutput.accept(ModBlocks.PALEHARVEST_ORE.get());
-                        pOutput.accept(ModBlocks.DEEPSLATE_PALEHARVEST_ORE.get());
-                        pOutput.accept(ModBlocks.RAW_PALEHARVEST_BLOCK.get());
-                        pOutput.accept(ModBlocks.PALEHARVEST_INGOT_BLOCK.get());
+                        pOutput.accept(ModBlocks.DANGO_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_DANGO_ORE.get());
+                        pOutput.accept(ModBlocks.RAW_DANGO_BLOCK.get());
+                        pOutput.accept(ModBlocks.DANGO_INGOT_BLOCK.get());
                         pOutput.accept(ModBlocks.FLARITE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_FLARITE_ORE.get());
                         pOutput.accept(ModBlocks.FLARITE_BLOCK.get());
@@ -60,11 +60,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ORANGE_TRAPDOOR.get());
                         pOutput.accept(ModBlocks.ORANGE_PRESSURE_PLATE.get());
 
-                        pOutput.accept(ModItems.PALEHARVEST_SWORD.get());
-                        pOutput.accept(ModItems.PALEHARVEST_AXE.get());
-                        pOutput.accept(ModItems.PALEHARVEST_HOE.get());
-                        pOutput.accept(ModItems.PALEHARVEST_PICKAXE.get());
-                        pOutput.accept(ModItems.PALEHARVEST_SHOVEL.get());
+                        pOutput.accept(ModItems.DANGO_SWORD.get());
+                        pOutput.accept(ModItems.DANGO_AXE.get());
+                        pOutput.accept(ModItems.DANGO_HOE.get());
+                        pOutput.accept(ModItems.DANGO_PICKAXE.get());
+                        pOutput.accept(ModItems.DANGO_SHOVEL.get());
 
                         pOutput.accept(ModItems.TUANZI_SPAWN_EGG.get());
 
