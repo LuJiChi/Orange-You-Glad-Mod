@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "orangeyouglad_mod:orange_planks"
+    }
+  ],
+  "result": {
+    "item": "orangeyouglad_mod:orange_button"
+  }
+}

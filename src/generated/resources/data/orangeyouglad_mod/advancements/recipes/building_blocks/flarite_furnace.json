@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dango_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "orangeyouglad_mod:dango_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "orangeyouglad_mod:flarite_furnace"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_dango_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "orangeyouglad_mod:flarite_furnace"
+    ]
+  },
+  "sends_telemetry_event": false
+}

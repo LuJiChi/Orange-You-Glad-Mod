@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "orangeyouglad_mod:qingyuan_stone"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "orangeyouglad_mod:qingyuan_stone_pressure_plate"
+  },
+  "show_notification": true
+}

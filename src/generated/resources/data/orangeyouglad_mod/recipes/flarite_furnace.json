@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "orangeyouglad_mod:dango_ingot"
+    },
+    "/": {
+      "item": "orangeyouglad_mod:flarite"
+    }
+  },
+  "pattern": [
+    "#/#",
+    "/ /",
+    "#/#"
+  ],
+  "result": {
+    "count": 4,
+    "item": "orangeyouglad_mod:flarite_furnace"
+  },
+  "show_notification": true
+}

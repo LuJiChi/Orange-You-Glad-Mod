@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "orangeyouglad_mod:orange_planks"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "orangeyouglad_mod:orange_pressure_plate"
+  },
+  "show_notification": true
+}

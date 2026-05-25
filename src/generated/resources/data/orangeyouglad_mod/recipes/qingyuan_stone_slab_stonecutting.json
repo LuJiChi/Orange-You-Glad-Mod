@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "orangeyouglad_mod:qingyuan_stone"
+  },
+  "result": "orangeyouglad_mod:qingyuan_stone_slab"
+}

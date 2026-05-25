@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "orangeyouglad_mod:qingyuan_stone"
+    }
+  },
+  "pattern": [
+    "   ",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "orangeyouglad_mod:qingyuan_stone_wall"
+  },
+  "show_notification": true
+}
