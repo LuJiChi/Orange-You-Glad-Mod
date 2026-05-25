@@ -30,8 +30,9 @@ public class ModFoods {
             .saturationMod(0.1F)
             .build();
     public static final FoodProperties ORANGE_BRAISED_CHICKEN_WING = new FoodProperties.Builder()
-            .nutrition(8)
-            .saturationMod(0.6F)
+            .nutrition(9)
+            .saturationMod(1F)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100), 1.0F)
             .meat()
             .build();
 }
