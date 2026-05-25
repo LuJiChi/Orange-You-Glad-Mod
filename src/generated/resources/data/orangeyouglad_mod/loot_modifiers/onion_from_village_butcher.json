@@ -1,0 +1,11 @@
+{
+  "type": "orangeyouglad_mod:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village/village_butcher"
+    }
+  ],
+  "count": 4,
+  "item": "orangeyouglad_mod:onion"
+}

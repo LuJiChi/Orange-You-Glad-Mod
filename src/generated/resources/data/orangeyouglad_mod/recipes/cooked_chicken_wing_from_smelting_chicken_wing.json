@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 160,
+  "experience": 0.3,
+  "group": "chicken_wing",
+  "ingredient": {
+    "item": "orangeyouglad_mod:chicken_wing"
+  },
+  "result": "orangeyouglad_mod:cooked_chicken_wing"
+}
