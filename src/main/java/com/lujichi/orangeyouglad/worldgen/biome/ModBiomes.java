@@ -1,9 +1,7 @@
 package com.lujichi.orangeyouglad.worldgen.biome;
 
 import com.lujichi.orangeyouglad.OrangeYouGladMod;
-import com.lujichi.orangeyouglad.block.ModBlocks;
 import com.lujichi.orangeyouglad.entity.ModEntities;
-import com.lujichi.orangeyouglad.worldgen.ModPlacedFeatures;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.worldgen.BootstapContext;

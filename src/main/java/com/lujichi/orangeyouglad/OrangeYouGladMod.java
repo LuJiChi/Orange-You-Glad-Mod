@@ -12,7 +12,6 @@ import com.lujichi.orangeyouglad.loot.ModLootModifier;
 import com.lujichi.orangeyouglad.recipe.ModRecipes;
 import com.lujichi.orangeyouglad.screen.FlariteFurnaceScreen;
 import com.lujichi.orangeyouglad.screen.ModMenuTypes;
-import com.lujichi.orangeyouglad.worldgen.biome.ModBiomes;
 import com.lujichi.orangeyouglad.worldgen.biome.ModTerrablender;
 import com.lujichi.orangeyouglad.worldgen.biome.surface.ModSurfaceRules;
 import com.mojang.logging.LogUtils;

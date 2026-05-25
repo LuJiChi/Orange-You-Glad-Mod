@@ -12,8 +12,6 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
 
-import java.awt.*;
-
 public class FlariteFurnaceMenu extends AbstractContainerMenu {
     public final FlariteFurnaceBlockEntity blockEntity;
     private final Level level;

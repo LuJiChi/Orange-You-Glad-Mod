@@ -2,7 +2,6 @@ package com.lujichi.orangeyouglad.item;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.animal.Chicken;
 import net.minecraft.world.food.FoodProperties;
 
 public class ModFoods {

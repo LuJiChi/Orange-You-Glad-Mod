@@ -1,7 +1,7 @@
 package com.lujichi.orangeyouglad.worldgen.biome.surface;
 
 // ...existing code...
-import com.lujichi.orangeyouglad.OrangeYouGladMod;
+
 import com.lujichi.orangeyouglad.block.ModBlocks;
 import com.lujichi.orangeyouglad.worldgen.biome.ModBiomes;
 import net.minecraft.world.level.block.Block;
