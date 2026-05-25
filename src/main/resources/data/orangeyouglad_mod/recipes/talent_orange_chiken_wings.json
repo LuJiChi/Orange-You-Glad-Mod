@@ -1,0 +1,19 @@
+{
+  "type": "orangeyouglad_mod:flarite_furnace_smelting",
+  "ingredients": [
+    {
+      "item": "orangeyouglad_mod:orange"
+    },
+    {
+      "item": "orangeyouglad_mod:onion"
+    },
+    {
+      "tag": "orangeyouglad_mod:chicken_wings"
+    }
+  ],
+  "output": {
+    "item": "orange_braised_chicken_wing",
+    "count": 1
+  },
+  "talent_cost": 200
+}

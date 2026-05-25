@@ -26,6 +26,7 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicItem(ModItems.DANGO_INGOT.get());
         basicItem(ModItems.FLARITE.get());
         basicItem(ModItems.ONION.get());
+        basicItem(ModItems.ORANGE_BRAISED_CHICKEN_WING.get());
 
 
         buttonItem(ModBlocks.ORANGE_BUTTON, ModBlocks.ORANGE_PLANKS);
@@ -44,6 +45,7 @@ public class ModItemModelsProvider extends ItemModelProvider {
         saplingItem(ModBlocks.ORANGE_SAPLING);
 
         withExistingParent(ModItems.TUANZI_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.HORNBILL_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
     }
 

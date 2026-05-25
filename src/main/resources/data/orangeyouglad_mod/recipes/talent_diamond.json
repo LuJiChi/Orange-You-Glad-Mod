@@ -1,0 +1,22 @@
+{
+  "type": "orangeyouglad_mod:flarite_furnace_smelting",
+  "ingredients": [
+    {
+      "item": "minecraft:coal",
+        "count": 3
+    },
+    {
+      "item": "minecraft:coal",
+        "count": 3
+    },
+    {
+      "item": "minecraft:coal",
+        "count": 3
+    }
+  ],
+  "output": {
+    "item": "minecraft:diamond",
+    "count": 1
+  },
+  "talent_cost": 500
+}

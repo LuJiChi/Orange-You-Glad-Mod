@@ -4,6 +4,7 @@ package com.lujichi.orangeyouglad.datagen;
 import com.lujichi.orangeyouglad.OrangeYouGladMod;
 import com.lujichi.orangeyouglad.block.ModBlocks;
 import com.lujichi.orangeyouglad.item.ModItems;
+import com.lujichi.orangeyouglad.tags.ModItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -34,5 +35,8 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                         ModBlocks.STRIPPED_ORANGE_WOOD.get().asItem());
         tag(ItemTags.FISHES)
                 .add(ModItems.SALTED_FISH.get());
+        tag(ModItemTags.CHICKEN_WINGS)
+                .add(ModItems.CHICKEN_WING.get(),
+                        ModItems.COOKED_CHICKEN_WING.get());
     }
 }

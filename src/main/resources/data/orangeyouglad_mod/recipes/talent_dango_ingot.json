@@ -5,15 +5,15 @@
       "item": "orangeyouglad_mod:raw_dango"
     },
     {
-      "item": "minecraft:diamond"
+      "item": "orangeyouglad_mod:raw_dango"
     },
     {
-      "item": "minecraft:nether_star"
+      "item": "orangeyouglad_mod:raw_dango"
     }
   ],
   "output": {
     "item": "orangeyouglad_mod:dango_ingot",
-    "count": 8
+    "count": 3
   },
   "talent_cost": 0
 }

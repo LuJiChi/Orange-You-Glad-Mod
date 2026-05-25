@@ -29,13 +29,6 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
         oreBlasting(pWriter, List.of(ModBlocks.DANGO_ORE.get()), RecipeCategory.MISC, ModItems.DANGO_INGOT.get(), 0.3F, 100, "dango");
         oreBlasting(pWriter, List.of(ModItems.RAW_DANGO.get()), RecipeCategory.MISC, ModItems.DANGO_INGOT.get(), 0.3F, 100, "dango");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_DANGO_BLOCK.get())
-                .pattern("###")
-                .pattern("###")
-                .pattern("###")
-                .define('#', ModItems.RAW_DANGO.get())
-                .unlockedBy(getHasName(ModItems.RAW_DANGO.get()), has(ModItems.RAW_DANGO.get()))
-                .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DANGO_INGOT_BLOCK.get())
                 .pattern("###")
                 .pattern("###")
@@ -53,10 +46,6 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
 
 
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_DANGO.get(), 9)
-                .requires(ModBlocks.RAW_DANGO_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.RAW_DANGO_BLOCK.get()), has(ModBlocks.RAW_DANGO_BLOCK.get()))
-                .save(pWriter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.DANGO_INGOT.get(), 9)
                 .requires(ModBlocks.DANGO_INGOT_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.DANGO_INGOT_BLOCK.get()), has(ModBlocks.DANGO_INGOT_BLOCK.get()))
@@ -65,6 +54,9 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
                 .requires(ModBlocks.FLARITE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.FLARITE_BLOCK.get()), has(ModBlocks.FLARITE_BLOCK.get()))
                 .save(pWriter);
+
+
+        oreCooking(pWriter, RecipeSerializer.SMELTING_RECIPE, List.of(ModItems.CHICKEN_WING.get()), RecipeCategory.MISC, ModItems.COOKED_CHICKEN_WING.get(), 0.3F, 160, "chicken_wing", "_from_smelting");
 
     }
 

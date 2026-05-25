@@ -28,5 +28,39 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft", "chests/buried_treasure")).build() },
                 ModItems.SALTED_FISH.get(), 1));
 
+        // Add onion to village butcher chests
+        add("onion_from_village_butcher", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft", "chests/village/village_butcher")).build() },
+                ModItems.ONION.get(), 4));
+
+        // Add onion to other village chests
+        add("onion_from_village_cartographer", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft", "chests/village/village_cartographer")).build() },
+                ModItems.ONION.get(), 2));
+        add("onion_from_village_fletcher", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft", "chests/village/village_fletcher")).build() },
+                ModItems.ONION.get(), 2));
+        add("onion_from_village_mason", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft", "chests/village/village_mason")).build() },
+                ModItems.ONION.get(), 2));
+        add("onion_from_village_shepherd", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft", "chests/village/village_shepherd")).build() },
+                ModItems.ONION.get(), 2));
+        add("onion_from_village_tannery", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft", "chests/village/village_tannery")).build() },
+                ModItems.ONION.get(), 2));
+        add("onion_from_village_toolsmith", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft", "chests/village/village_toolsmith")).build() },
+                ModItems.ONION.get(), 2));
+        add("onion_from_village_weaponsmith", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft", "chests/village/village_weaponsmith")).build() },
+                ModItems.ONION.get(), 2));
+        add("onion_from_village_library", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft", "chests/village/village_library")).build() },
+                ModItems.ONION.get(), 1));
+        add("onion_from_village_fisher", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(ResourceLocation.fromNamespaceAndPath("minecraft", "chests/village/village_fisher")).build() },
+                ModItems.ONION.get(), 2));
+
     }
 }

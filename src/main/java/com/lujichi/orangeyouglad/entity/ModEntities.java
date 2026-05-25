@@ -25,8 +25,8 @@ public class ModEntities {
 
 
     // 注册自定义画变体
-    public static final RegistryObject<PaintingVariant> BAI_ZANG_PAINTING = PAINTING_VARIANTS.register("bai_zang_painting",
-            () -> new PaintingVariant(32, 32));
+    public static final RegistryObject<PaintingVariant> TUANZI_PAINTING = PAINTING_VARIANTS.register("tuanzi_painting",
+            () -> new PaintingVariant(64, 64));
 
 
     public static void register(IEventBus eventBus) {

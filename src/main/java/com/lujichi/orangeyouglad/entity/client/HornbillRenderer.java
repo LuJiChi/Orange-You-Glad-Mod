@@ -10,7 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class HornbillRenderer extends MobRenderer<HornbillEntity, Hornbill<HornbillEntity>> {
     public HornbillRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new Hornbill<>(pContext.bakeLayer(ModModelLayers.HORNBILL_LAYER)), 0.5f);
+        super(pContext, new Hornbill<HornbillEntity>(pContext.bakeLayer(ModModelLayers.HORNBILL_LAYER)), 0.5f);
     }
 
     @Override

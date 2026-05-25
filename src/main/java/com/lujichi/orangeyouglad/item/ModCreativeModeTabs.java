@@ -27,6 +27,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.DANGO_INGOT.get());
                         pOutput.accept(ModItems.FLARITE.get());
                         pOutput.accept(ModItems.ONION.get());
+                        pOutput.accept(ModItems.ORANGE_BRAISED_CHICKEN_WING.get());
 
                         pOutput.accept(ModBlocks.ORANGE_PLANKS.get());
                         pOutput.accept(ModBlocks.ORANGE_LOG.get());
@@ -39,7 +40,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.QINGYUAN_STONE.get());
                         pOutput.accept(ModBlocks.DANGO_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_DANGO_ORE.get());
-                        pOutput.accept(ModBlocks.RAW_DANGO_BLOCK.get());
                         pOutput.accept(ModBlocks.DANGO_INGOT_BLOCK.get());
                         pOutput.accept(ModBlocks.FLARITE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_FLARITE_ORE.get());
@@ -67,6 +67,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.DANGO_SHOVEL.get());
 
                         pOutput.accept(ModItems.TUANZI_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.HORNBILL_SPAWN_EGG.get());
 
                         pOutput.accept(ModBlocks.ORANGE_SAPLING.get());
 

@@ -23,6 +23,7 @@ public class ModZhCnLangProvider extends LanguageProvider {
         add(ModItems.DANGO_INGOT.get(), "团子锭");
         add(ModItems.FLARITE.get(), "才火煤");
         add(ModItems.ONION.get(), "洋葱");
+        add(ModItems.ORANGE_BRAISED_CHICKEN_WING.get(), "橙子卤鸡翅");
 
 
         add(ModBlocks.ORANGE_PLANKS.get(), "橙树木板");
@@ -40,7 +41,6 @@ public class ModZhCnLangProvider extends LanguageProvider {
         add(ModBlocks.QINGYUAN_STONE.get(), "清源石");
         add(ModBlocks.DANGO_ORE.get(), "团子矿");
         add(ModBlocks.DEEPSLATE_DANGO_ORE.get(), "深团子矿");
-        add(ModBlocks.RAW_DANGO_BLOCK.get(), "粗团子块");
         add(ModBlocks.DANGO_INGOT_BLOCK.get(), "团子块");
         add(ModBlocks.FLARITE_ORE.get(), "才火矿");
         add(ModBlocks.DEEPSLATE_FLARITE_ORE.get(), "深才火矿");
@@ -71,13 +71,14 @@ public class ModZhCnLangProvider extends LanguageProvider {
         add(ModItems.DANGO_SHOVEL.get(), "团子铁锹");
         add(ModItems.DANGO_HOE.get(), "团子锄");
         add(ModItems.TUANZI_SPAWN_EGG.get(), "团子刷怪蛋");
+        add(ModItems.HORNBILL_SPAWN_EGG.get(), "犀鸟刷怪蛋");
 
         add(ModEffects.HARVEST.get(), "丰收");
 
         add(ModEntities.TUANZI.get(), "团子");
         add(ModEntities.HORNBILL.get(), "犀鸟");
 
-        add("painting.orangeyouglad_mod.bai_zang_painting.title", "白藏画");
+        add("painting.orangeyouglad_mod.tuanzi_painting.title", "团子画");
 
         add("tooltip.flarite_furnace.talent", "才华值:%s/%s");
         add("jei.orangeyouglad_mod.talent_cost", "才华值消耗: %s");

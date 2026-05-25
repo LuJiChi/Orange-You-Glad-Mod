@@ -18,6 +18,6 @@ public class ModPaintingTagsProvider extends PaintingVariantTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        tag(PaintingVariantTags.PLACEABLE).add(ModEntities.BAI_ZANG_PAINTING.getKey());
+        tag(PaintingVariantTags.PLACEABLE).add(ModEntities.TUANZI_PAINTING.getKey());
     }
 }

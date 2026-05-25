@@ -1,5 +1,6 @@
 package com.lujichi.orangeyouglad.entity.custom;
 
+import com.lujichi.orangeyouglad.effect.ModEffects;
 import com.lujichi.orangeyouglad.entity.ModEntities;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.*;
@@ -17,6 +18,9 @@ import org.jetbrains.annotations.Nullable;
 public class TuanziEntity extends Animal {
     private float squish = 1.0F;
     private float prevSquish = 1.0F;
+    private static final int EFFECT_RADIUS = 4;
+    private static final int EFFECT_INTERVAL = 60;
+    private int effectTickCounter = 0;
 
     public TuanziEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
@@ -58,6 +62,27 @@ public class TuanziEntity extends Animal {
         super.tick();
         this.prevSquish = this.squish;
         this.squish += (1.0F - this.squish) * 0.6F;
+
+        if (!this.level().isClientSide && this.effectTickCounter++ >= EFFECT_INTERVAL) {
+            this.effectTickCounter = 0;
+            applyHarvestEffectToNearbyPlayers();
+        }
+    }
+
+    private void applyHarvestEffectToNearbyPlayers() {
+        double x = this.getX();
+        double y = this.getY();
+        double z = this.getZ();
+        double radiusSq = (double)EFFECT_RADIUS * (double)EFFECT_RADIUS;
+
+        for (Player player : this.level().getEntitiesOfClass(Player.class, new net.minecraft.world.phys.AABB(
+                x - EFFECT_RADIUS, y - EFFECT_RADIUS, z - EFFECT_RADIUS,
+                x + EFFECT_RADIUS, y + EFFECT_RADIUS, z + EFFECT_RADIUS))) {
+            if (player.distanceToSqr(this) <= radiusSq) {
+                player.addEffect(new net.minecraft.world.effect.MobEffectInstance(
+                        ModEffects.HARVEST.get(), 200, 0, false, true, true));
+            }
+        }
     }
 
     public float getSquish() {

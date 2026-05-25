@@ -25,6 +25,8 @@ public class ModItems {
             ITEMS.register("cooked_chicken_wing", () -> new Item(new Item.Properties().food(ModFoods.COOKED_CHICKEN_WING)));
     public static final RegistryObject<Item> ONION =
             ITEMS.register("onion", () -> new ItemNameBlockItem(ModBlocks.ONION_CROP.get(),new Item.Properties().food(ModFoods.ONION)));
+    public static final RegistryObject<Item> ORANGE_BRAISED_CHICKEN_WING =
+            ITEMS.register("orange_braised_chicken_wing", () -> new BowlFoodItem(new Item.Properties().food(ModFoods.ORANGE_BRAISED_CHICKEN_WING)));
 
 
     public static final RegistryObject<Item> RAW_DANGO =
@@ -38,17 +40,20 @@ public class ModItems {
     public static final RegistryObject<Item> DANGO_SWORD =
             ITEMS.register("dango_sword", () -> new SwordItem(ModToolTiers.DANGO_INGOT, 3, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> DANGO_PICKAXE =
-            ITEMS.register("dango_pickaxe", () -> new PickaxeItem(ModToolTiers.DANGO_INGOT, 3, -2.8F, new Item.Properties()));
+            ITEMS.register("dango_pickaxe", () -> new PickaxeItem(ModToolTiers.DANGO_INGOT, 1, -2.8F, new Item.Properties()));
     public static final RegistryObject<Item> DANGO_AXE =
-            ITEMS.register("dango_axe", () -> new AxeItem(ModToolTiers.DANGO_INGOT, 3, -2.8F, new Item.Properties()));
+            ITEMS.register("dango_axe", () -> new AxeItem(ModToolTiers.DANGO_INGOT, 6, -3.1F, new Item.Properties()));
     public static final RegistryObject<Item> DANGO_SHOVEL =
-            ITEMS.register("dango_shovel", () -> new ShovelItem(ModToolTiers.DANGO_INGOT, 3, -2.8F, new Item.Properties()));
+            ITEMS.register("dango_shovel", () -> new ShovelItem(ModToolTiers.DANGO_INGOT, 1.5F, -3F, new Item.Properties()));
     public static final RegistryObject<Item> DANGO_HOE =
-            ITEMS.register("dango_hoe", () -> new HoeItem(ModToolTiers.DANGO_INGOT, 3, -2.8F, new Item.Properties()));
+            ITEMS.register("dango_hoe", () -> new HoeItem(ModToolTiers.DANGO_INGOT, -2, -1F, new Item.Properties()));
 
 
     public static final RegistryObject<Item> TUANZI_SPAWN_EGG =
             ITEMS.register("tuanzi_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.TUANZI, 0xFFE4C4, 0xF5F5F5,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> HORNBILL_SPAWN_EGG =
+            ITEMS.register("hornbill_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.HORNBILL, 0x082e07, 0x076605,
                     new Item.Properties()));
 
 

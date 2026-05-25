@@ -6,9 +6,20 @@ import com.lujichi.orangeyouglad.item.custom.OnionCropBlock;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.BonusLevelTableCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -26,16 +37,18 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.STRIPPED_ORANGE_LOG.get());
         dropSelf(ModBlocks.STRIPPED_ORANGE_WOOD.get());
         dropSelf(ModBlocks.ORANGE_SAPLING.get());
-        add(ModBlocks.ORANGE_LEAVES.get(),block -> createLeavesDrops(block,ModBlocks.ORANGE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        add(ModBlocks.ORANGE_LEAVES.get(),block -> createLeavesDrops(block,ModBlocks.ORANGE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES)
+                .withPool(LootPool.lootPool().add(LootItem.lootTableItem(ModItems.ORANGE.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 2))))
+                        .when(LootItemRandomChanceCondition.randomChance(0.3F))));
 
         dropSelf(ModBlocks.QINGYUAN_STONE.get());
-        dropSelf(ModBlocks.RAW_DANGO_BLOCK.get());
         dropSelf(ModBlocks.DANGO_INGOT_BLOCK.get());
         dropSelf(ModBlocks.FLARITE_BLOCK.get());
         dropSelf(ModBlocks.CHISELED_QINGYUAN_STONE.get());
         add(ModBlocks.DANGO_ORE.get(), block -> createOreDrop(ModBlocks.DANGO_ORE.get(), ModItems.RAW_DANGO.get()));
         add(ModBlocks.DEEPSLATE_DANGO_ORE.get(), block -> createOreDrop(ModBlocks.DEEPSLATE_DANGO_ORE.get(), ModItems.RAW_DANGO.get()));
-        add(ModBlocks.FLARITE_ORE.get(),block -> createOreDrop(ModBlocks.FLARITE_ORE.get(), ModItems.FLARITE.get()));
+        add(ModBlocks.FLARITE_ORE.get(), block -> createOreDrop(ModBlocks.FLARITE_ORE.get(), ModItems.FLARITE.get()));
         add(ModBlocks.DEEPSLATE_FLARITE_ORE.get(), block -> createOreDrop(ModBlocks.DEEPSLATE_FLARITE_ORE.get(), ModItems.FLARITE.get()));
 
         dropSelf(ModBlocks.ORANGE_STAIRS.get());

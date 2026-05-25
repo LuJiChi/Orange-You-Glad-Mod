@@ -34,7 +34,6 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DANGO_ORE.get(),
-                        ModBlocks.RAW_DANGO_BLOCK.get(),
                         ModBlocks.DANGO_INGOT_BLOCK.get(),
                         ModBlocks.DEEPSLATE_DANGO_ORE.get());
 
@@ -56,5 +55,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
         tag(BlockTags.PLANKS)
                 .add(ModBlocks.ORANGE_PLANKS.get());
+
+        tag(BlockTags.BEACON_BASE_BLOCKS)
+                .add(ModBlocks.FLARITE_BLOCK.get(),
+                        ModBlocks.DANGO_INGOT_BLOCK.get());
     }
 }

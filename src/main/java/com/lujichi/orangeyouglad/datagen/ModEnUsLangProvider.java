@@ -23,6 +23,7 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModItems.DANGO_INGOT.get(), "Dango Ingot");
         add(ModItems.FLARITE.get(), "Flarite");
         add(ModItems.ONION.get(), "Onion");
+        add(ModItems.ORANGE_BRAISED_CHICKEN_WING.get(), "Orange Braised Chicken Wing");
 
 
 
@@ -40,7 +41,6 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModBlocks.QINGYUAN_STONE.get(), "Qingyuan Stone");
         add(ModBlocks.DANGO_ORE.get(), "Dango Ore");
         add(ModBlocks.DEEPSLATE_DANGO_ORE.get(), "Deepslate Dango Ore");
-        add(ModBlocks.RAW_DANGO_BLOCK.get(), "Raw Dango Block");
         add(ModBlocks.DANGO_INGOT_BLOCK.get(), "Dango Ingot Block");
         add(ModBlocks.FLARITE_ORE.get(), "Flarite Ore");
         add(ModBlocks.DEEPSLATE_FLARITE_ORE.get(), "Deepslate Flarite Ore");
@@ -71,13 +71,14 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModItems.DANGO_SHOVEL.get(), "Dango Shovel");
         add(ModItems.DANGO_HOE.get(), "Dango Hoe");
         add(ModItems.TUANZI_SPAWN_EGG.get(), "Tuanzi Spawn Egg");
+        add(ModItems.HORNBILL_SPAWN_EGG.get(), "Hornbill Spawn Egg");
 
         add(ModEffects.HARVEST.get(), "Harvest");
 
         add(ModEntities.TUANZI.get(), "Tuanzi");
         add(ModEntities.HORNBILL.get(), "Hornbill");
 
-        add("entity.orangeyouglad.bai_zang_painting", "Bai Zang Painting");
+        add("entity.orangeyouglad.tuanzi_painting", "Tuanzi Painting");
 
         add("tooltip.flarite_furnace.talent", "TalentValue:%s/%s");
         add("jei.orangeyouglad_mod.talent_cost", "TalentValueCost: %s");

@@ -83,8 +83,6 @@ public class ModBlocks {
             registerBlock("dango_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE)));
     public static final RegistryObject<Block> DEEPSLATE_DANGO_ORE =
             registerBlock("deepslate_dango_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_GOLD_ORE)));
-    public static final RegistryObject<Block> RAW_DANGO_BLOCK =
-            registerBlock("raw_dango_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F,6.0F)));
     public static final RegistryObject<Block> DANGO_INGOT_BLOCK =
             registerBlock("dango_ingot_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F,6.0F)));
     public static final RegistryObject<Block> FLARITE_ORE =

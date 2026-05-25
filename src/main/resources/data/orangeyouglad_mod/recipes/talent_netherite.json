@@ -2,18 +2,18 @@
   "type": "orangeyouglad_mod:flarite_furnace_smelting",
   "ingredients": [
     {
-      "item": "minecraft:coal"
+      "item": "minecraft:netherite_scrap"
     },
     {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:netherite_scrap"
     },
     {
       "item": "minecraft:gold_ingot"
     }
   ],
   "output": {
-    "item": "minecraft:diamond",
+    "item": "minecraft:netherite_ingot",
     "count": 1
   },
-  "talent_cost": 500
+  "talent_cost": 1000
 }

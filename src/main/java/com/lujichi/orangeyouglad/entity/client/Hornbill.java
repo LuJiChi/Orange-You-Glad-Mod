@@ -29,19 +29,19 @@ public class Hornbill<T extends Entity> extends HierarchicalModel<T> {
 		PartDefinition hornbill = partdefinition.addOrReplaceChild("hornbill", CubeListBuilder.create(), PartPose.offset(0.0F, 24.0F, 0.0F));
 
 		PartDefinition body = hornbill.addOrReplaceChild("body", CubeListBuilder.create().texOffs(18, 28).addBox(-2.0F, -2.0F, 1.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F))
-		.texOffs(20, 28).addBox(1.0F, -2.0F, 1.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F))
-		.texOffs(10, 37).addBox(-2.0F, 0.0F, -1.0F, 1.0F, 0.0F, 2.0F, new CubeDeformation(0.0F))
-		.texOffs(10, 39).addBox(1.0F, 0.0F, -1.0F, 1.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+				.texOffs(20, 28).addBox(1.0F, -2.0F, 1.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F))
+				.texOffs(10, 37).addBox(-2.0F, 0.0F, -1.0F, 1.0F, 0.0F, 2.0F, new CubeDeformation(0.0F))
+				.texOffs(10, 39).addBox(1.0F, 0.0F, -1.0F, 1.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
 		PartDefinition cube_r1 = body.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(0, 37).addBox(-2.0F, -3.0F, 2.0F, 4.0F, 5.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -1.7F, 8.0F, 1.2217F, 0.0F, 0.0F));
 
 		PartDefinition body_r1 = body.addOrReplaceChild("body_r1", CubeListBuilder.create().texOffs(22, 0).addBox(-3.0F, -9.0F, -1.0F, 6.0F, 7.0F, 5.0F, new CubeDeformation(0.0F))
-		.texOffs(36, 31).addBox(-3.0F, -2.0F, 0.0F, 6.0F, 1.0F, 4.0F, new CubeDeformation(0.0F))
-		.texOffs(36, 36).addBox(-2.0F, -1.0F, 1.0F, 4.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -2.6F, 6.0F, 1.4807F, 0.0F, 0.0F));
+				.texOffs(36, 31).addBox(-3.0F, -2.0F, 0.0F, 6.0F, 1.0F, 4.0F, new CubeDeformation(0.0F))
+				.texOffs(36, 36).addBox(-2.0F, -1.0F, 1.0F, 4.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -2.6F, 6.0F, 1.4807F, 0.0F, 0.0F));
 
-		PartDefinition wing_l_r1 = body.addOrReplaceChild("wing_l_r1", CubeListBuilder.create().texOffs(0, 14).addBox(-1.0F, -4.0F, -2.0F, 1.0F, 4.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(4.0F, -3.3F, -1.1F, -0.1864F, -0.0379F, 0.0633F));
+		PartDefinition wing_l_r1 = body.addOrReplaceChild("wing_l_r1", CubeListBuilder.create().texOffs(0, 14).addBox(-1.0F, -4.0F, -2.0F, 1.0F, 4.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(4.0F, -6.3F, -1.6F, -1.3657F, -0.1165F, -1.4615F));
 
-		PartDefinition wing_r_r1 = body.addOrReplaceChild("wing_r_r1", CubeListBuilder.create().texOffs(0, 0).addBox(0.0F, -4.0F, -2.0F, 1.0F, 4.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-4.0F, -3.3F, -1.1F, -0.1864F, 0.0379F, -0.0633F));
+		PartDefinition wing_r_r1 = body.addOrReplaceChild("wing_r_r1", CubeListBuilder.create().texOffs(0, 0).addBox(0.0F, -4.0F, -2.0F, 1.0F, 4.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-4.0F, -6.3F, -1.1F, -1.3196F, 0.0629F, 1.4705F));
 
 		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create(), PartPose.offset(0.0F, 24.0F, 0.0F));
 
@@ -57,7 +57,6 @@ public class Hornbill<T extends Entity> extends HierarchicalModel<T> {
 
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
-
 	@Override
 	public void setupAnim(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 

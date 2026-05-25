@@ -1,8 +1,18 @@
 {
   "entries": [
+    "orangeyouglad_mod:onion_from_village_fisher",
+    "orangeyouglad_mod:onion_from_village_library",
+    "orangeyouglad_mod:onion_from_village_shepherd",
+    "orangeyouglad_mod:onion_from_village_mason",
+    "orangeyouglad_mod:onion_from_village_weaponsmith",
+    "orangeyouglad_mod:onion_from_village_cartographer",
     "orangeyouglad_mod:salted_fish_from_treasure",
+    "orangeyouglad_mod:onion_from_village_tannery",
     "orangeyouglad_mod:chicken_wings_from_chicken",
-    "orangeyouglad_mod:salted_fish_from_fishing"
+    "orangeyouglad_mod:salted_fish_from_fishing",
+    "orangeyouglad_mod:onion_from_village_butcher",
+    "orangeyouglad_mod:onion_from_village_fletcher",
+    "orangeyouglad_mod:onion_from_village_toolsmith"
   ],
   "replace": false
 }
