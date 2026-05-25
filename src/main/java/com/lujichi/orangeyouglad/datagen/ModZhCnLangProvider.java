@@ -61,7 +61,6 @@ public class ModZhCnLangProvider extends LanguageProvider {
         add(ModBlocks.QINGYUAN_STONE_SLAB.get(), "清源石台阶");
         add(ModBlocks.QINGYUAN_STONE_BUTTON.get(), "清源石质按钮");
         add(ModBlocks.QINGYUAN_STONE_PRESSURE_PLATE.get(), "清源石质压力板");
-        add(ModBlocks.CHISELED_QINGYUAN_STONE.get(), "清源石质切块");
 
 
 

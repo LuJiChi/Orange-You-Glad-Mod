@@ -61,7 +61,6 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModBlocks.QINGYUAN_STONE_SLAB.get(), "Qingyuan Stone Slab");
         add(ModBlocks.QINGYUAN_STONE_BUTTON.get(), "Qingyuan Stone Button");
         add(ModBlocks.QINGYUAN_STONE_PRESSURE_PLATE.get(), "Qingyuan Stone Pressure Plate");
-        add(ModBlocks.CHISELED_QINGYUAN_STONE.get(), "Chiseled Qingyuan Stone");
 
 
 

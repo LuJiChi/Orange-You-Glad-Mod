@@ -23,13 +23,11 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.QINGYUAN_STONE.get(),
                         ModBlocks.QINGYUAN_STONE_BUTTON.get(),
                         ModBlocks.QINGYUAN_STONE_PRESSURE_PLATE.get(),
-                        ModBlocks.CHISELED_QINGYUAN_STONE.get(),
                         ModBlocks.QINGYUAN_STONE_WALL.get(),
                         ModBlocks.QINGYUAN_STONE_STAIRS.get(),
                         ModBlocks.QINGYUAN_STONE_SLAB.get(),
                         ModBlocks.FLARITE_ORE.get(),
                         ModBlocks.FLARITE_BLOCK.get(),
-                        ModBlocks.CHISELED_QINGYUAN_STONE.get(),
                         ModBlocks.DEEPSLATE_FLARITE_ORE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
@@ -37,8 +35,6 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                         ModBlocks.DANGO_INGOT_BLOCK.get(),
                         ModBlocks.DEEPSLATE_DANGO_ORE.get());
 
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.CHISELED_QINGYUAN_STONE.get());
 
         tag(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.ORANGE_FENCE.get());

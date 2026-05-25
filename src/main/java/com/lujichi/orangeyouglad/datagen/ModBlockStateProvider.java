@@ -31,7 +31,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(ModBlocks.DANGO_INGOT_BLOCK.get(), cubeAll(ModBlocks.DANGO_INGOT_BLOCK.get()));
         simpleBlockWithItem(ModBlocks.FLARITE_ORE.get(), cubeAll(ModBlocks.FLARITE_ORE.get()));
         simpleBlockWithItem(ModBlocks.FLARITE_BLOCK.get(), cubeAll(ModBlocks.FLARITE_BLOCK.get()));
-        simpleBlockWithItem(ModBlocks.CHISELED_QINGYUAN_STONE.get(), cubeAll(ModBlocks.CHISELED_QINGYUAN_STONE.get()));
         simpleBlockWithItem(ModBlocks.DEEPSLATE_DANGO_ORE.get(), cubeAll(ModBlocks.DEEPSLATE_DANGO_ORE.get()));
         simpleBlockWithItem(ModBlocks.DEEPSLATE_FLARITE_ORE.get(), cubeAll(ModBlocks.DEEPSLATE_FLARITE_ORE.get()));
 

@@ -94,8 +94,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> FLARITE_BLOCK =
             registerFuelBlock("flarite_block", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F,6.0F).requiresCorrectToolForDrops()), 24000);
 
-    public static final RegistryObject<Block> CHISELED_QINGYUAN_STONE =
-            registerBlock("chiseled_qingyuan_stone", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F,6.0F)));
     public static final RegistryObject<StairBlock> QINGYUAN_STONE_STAIRS =
             registerBlock("qingyuan_stone_stairs",
                     () -> new StairBlock(QINGYUAN_STONE.get().defaultBlockState(), BlockBehaviour.Properties.of().strength(1.5F,6.0F)));

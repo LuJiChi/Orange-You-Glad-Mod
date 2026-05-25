@@ -39,7 +39,6 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.QINGYUAN_STONE.get());
         dropSelf(ModBlocks.DANGO_INGOT_BLOCK.get());
         dropSelf(ModBlocks.FLARITE_BLOCK.get());
-        dropSelf(ModBlocks.CHISELED_QINGYUAN_STONE.get());
         add(ModBlocks.DANGO_ORE.get(), block -> createOreDrop(ModBlocks.DANGO_ORE.get(), ModItems.RAW_DANGO.get()));
         add(ModBlocks.DEEPSLATE_DANGO_ORE.get(), block -> createOreDrop(ModBlocks.DEEPSLATE_DANGO_ORE.get(), ModItems.RAW_DANGO.get()));
         add(ModBlocks.FLARITE_ORE.get(), block -> createOreDrop(ModBlocks.FLARITE_ORE.get(), ModItems.FLARITE.get()));
@@ -61,7 +60,6 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.QINGYUAN_STONE_SLAB.get());
         dropSelf(ModBlocks.QINGYUAN_STONE_BUTTON.get());
         dropSelf(ModBlocks.QINGYUAN_STONE_PRESSURE_PLATE.get());
-        dropSelf(ModBlocks.CHISELED_QINGYUAN_STONE.get());
 
         dropSelf(ModBlocks.FLARITE_FURNACE.get());
 
